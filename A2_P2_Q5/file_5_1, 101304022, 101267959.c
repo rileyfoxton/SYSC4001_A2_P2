@@ -56,7 +56,7 @@ int main(){
                         sprintf(arg1,"%d",countKey);
                         sprintf(arg2,"%d",multipleKey);
                         sprintf(arg3,"%d",semID);
-                        int execTest = execlp("./shared2", arg1,arg2,arg3, NULL);
+                        int execTest = execlp("./file_5_2_101304022_101267959.c", arg1,arg2,arg3, NULL);
                         if (execTest == -1) printf("exec failed\n");
                 }
                 if(*count%*mult == 0){
@@ -78,4 +78,5 @@ int main(){
         semctl(semID, 0, IPC_RMID);
         return 0;
 }
+
 
