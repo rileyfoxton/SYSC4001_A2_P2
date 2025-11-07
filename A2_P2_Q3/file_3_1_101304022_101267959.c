@@ -10,7 +10,7 @@ int main(){
 
     pid_t p = fork();
     if(p==0){
-        char *args[] = {"./part232", NULL};
+        char *args[] = {"./file_3_2_101304022_101267959.c", NULL};
         execvp("./part232", args);
     }
     wait(NULL);
