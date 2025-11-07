@@ -9,7 +9,7 @@ int main(){
     pid_t p = fork();
     if(p==0){
         char *args[] = {"./part222", NULL};
-        execvp("./part222", args);
+        execvp("./file_2_2_101304022_101267959.c", args);
     }
 
     int count = 0;
