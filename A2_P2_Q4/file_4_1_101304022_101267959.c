@@ -47,7 +47,7 @@ int main(){
                         char arg3[30];
                         sprintf(arg1,"%d",countKey);
                         sprintf(arg2,"%d",multipleKey);
-                        int execTest = execlp("./shared2", arg1,arg2, NULL);
+                        int execTest = execlp("./file_4_2_101304022_101267959.c", arg1,arg2, NULL);
                         if (execTest == -1) printf("exec failed\n");
                 }
                 if(*count%*mult == 0){
@@ -60,3 +60,4 @@ int main(){
         }
         return 0;
 }
+
