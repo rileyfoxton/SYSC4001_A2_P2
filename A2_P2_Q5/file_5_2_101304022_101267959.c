@@ -30,8 +30,8 @@ int main(int argc, char** argv){
                 buf[0].sem_num = -1;
                 semop(semID, buf, 1);
                 buf[0].sem_num = 0;
-                if(*count >500) break;
         }
         semctl(semID, 0, IPC_RMID);
         return 0;
 }
+
